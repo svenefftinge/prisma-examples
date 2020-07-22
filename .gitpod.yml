@@ -1,0 +1,14 @@
+workspaceLocation: prisma-examples/typescript/script
+tasks:
+  - command: |
+      unset BROWSER
+      npx prisma studio --experimental
+  - init: |
+      npm install
+      npm run dev
+ports:
+  - port: 5555
+    onOpen: open-preview
+vscode:
+  extensions:
+    - Prisma.prisma@2.3.0:FSUb1u3YqDnbpxFnVDROoA==
